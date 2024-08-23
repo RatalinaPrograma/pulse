@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="custom-title">
+      Pulse<ion-icon name="pulse-outline" class="white-icon"></ion-icon>Track
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Menú principal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-text color="primary">
+    <h1> <b> Bienvenido! </b> </h1>
+  </ion-text>
+  <ion-text color="secondary">
+    <h2>En esta aplicación podrás ingresar los signos vitales, enfermedades, alergias, datos y todo lo necesario para una comunicación directa con el hospital. </h2>
+  </ion-text>
+
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" class="button-col">
+      <ion-button class="custom-button" expand="full" shape="round"> 
+        <ion-icon name="document-text-sharp"></ion-icon> Paciente 
+      </ion-button>
+    </ion-col>
+    <ion-col size="12" class="button-col">
+      <ion-button class="custom-button custom-button-primary" expand="full" shape="round" [routerLink]="['/login']"> 
+        <ion-icon name="medkit-sharp"></ion-icon> Paramédico 
+      </ion-button>
+    </ion-col>
+    <ion-col size="12" class="button-col">
+      <ion-button class="custom-button custom-button-secondary" expand="full" shape="round"> 
+        <ion-icon name="pulse-sharp"></ion-icon> Signos vitales
+      </ion-button>
+    </ion-col>
+    <ion-col size="12" class="button-col">
+      <ion-button class="custom-button" expand="full" shape="round"> 
+        <ion-icon name="document-text-sharp"></ion-icon> Informe de síntomas 
+      </ion-button>
+    </ion-col>
+  </ion-row>  
+ 
+
+  
+</ion-content>

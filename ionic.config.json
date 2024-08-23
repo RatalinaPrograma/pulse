@@ -1,0 +1,7 @@
+{
+  "name": "pulsetrack",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
