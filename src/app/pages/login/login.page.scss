@@ -1,0 +1,81 @@
+ion-content {
+    --background: #DCF0FF;
+  
+  }
+
+ion-item{
+    --background:#2a60a7;
+}
+
+ion-icon{
+    font-size: 30px;
+}
+
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+.custom-title {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    /* Cambia la fuente */
+    font-size: 24px;
+    /* Cambia el tamaño de la fuente */
+    color: #61B1E6;
+    /* Cambia el color de la fuente */
+    font-weight: bold;
+    /* Cambia el grosor de la fuente */
+  }
+
+  .white-icon {
+    color: #ffffff;
+    /* Color blanco */
+  }
+  
+  .custom-button {
+    --background: #61B1E6; /* Color de fondo del botón */
+    --color: #ffffff; /* Color del texto del botón */
+    --border-radius: 50px; /* Radio del borde para la forma redondeada */
+    font-size: 20px; /* Tamaño de la fuente del texto en el botón */
+    padding: 15px; /* Espacio interno del botón, lo que puede agrandar el botón */
+    height: 100px; /* Aumenta la altura del botón */
+  }
+
+  .custom-title {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    /* Cambia la fuente */
+    font-size: 24px;
+    /* Cambia el tamaño de la fuente */
+    color: #61B1E6;
+    /* Cambia el color de la fuente */
+    font-weight: bold;
+    /* Cambia el grosor de la fuente */
+  }
+
+  ion-toolbar {
+    --background: #1C5183;
+    /* Cambia el color de fondo del ion-toolbar si es necesario */
+  }
+
+  .center-text {
+    text-align: center;
+    color: #2a60a7;
+    background: #61B1E6 ;
+  }
+
+  .centered-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
+  }
+  
+  

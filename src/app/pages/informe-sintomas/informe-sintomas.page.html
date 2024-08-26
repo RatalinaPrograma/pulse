@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Informe-Sintomas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>Informe de los sintomas del paciente</ion-card-title>
+    </ion-card-content>
+  </ion-card>
+  <ion-card-content>
+    <ion-icon name="document-text-sharp" style="font-size: 45px; color: #000000; border: 2px solid #000000; border-radius: 50%; padding: 16px;"></ion-icon>
+  </ion-card-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Redacte los sintomas del paciente</ion-card-title>
+    </ion-card-header>
+    <ion-textarea placeholder="Redacte...." rows="10" style="width: 100%;"></ion-textarea>
+  </ion-card>
+
+  <ion-button class="custom-button custom-button-secondary" expand="full" shape="round" >
+    Enviar
+  </ion-button>
+</ion-content>
