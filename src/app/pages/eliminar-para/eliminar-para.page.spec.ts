@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { BuscarPacPage } from './buscar-pac.page';
+import { EliminarParaPage } from './eliminar-para.page';
 
-describe('BuscarPacPage', () => {
-  let component: BuscarPacPage;
-  let fixture: ComponentFixture<BuscarPacPage>;
+describe('EliminarParaPage', () => {
+  let component: EliminarParaPage;
+  let fixture: ComponentFixture<EliminarParaPage>;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BuscarPacPage);
+    fixture = TestBed.createComponent(EliminarParaPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

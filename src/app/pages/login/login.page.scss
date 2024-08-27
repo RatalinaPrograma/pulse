@@ -21,35 +21,30 @@ ion-icon{
     transform: translateY(-50%);
   }
 
-.custom-title {
+  .custom-title {
     text-align: center;
     font-family: 'Arial', sans-serif;
-    /* Cambia la fuente */
     font-size: 24px;
-    /* Cambia el tamaño de la fuente */
     color: #61B1E6;
-    /* Cambia el color de la fuente */
     font-weight: bold;
-    /* Cambia el grosor de la fuente */
+  
   }
-
+  
   .white-icon {
     color: #ffffff;
-    /* Color blanco */
+  }
+  
+  ion-toolbar {
+    --background: #1C5183;
   }
   
   .custom-button {
-    --background: #61B1E6; /* Color de fondo del botón */
-    --color: #ffffff; /* Color del texto del botón */
-    --border-radius: 50px; /* Radio del borde para la forma redondeada */
-    font-size: 20px; /* Tamaño de la fuente del texto en el botón */
-    padding: 15px; /* Espacio interno del botón, lo que puede agrandar el botón */
-    height: 100px; /* Aumenta la altura del botón */
-  }
-
-  ion-toolbar {
-    --background: #1C5183;
-    /* Cambia el color de fondo del ion-toolbar si es necesario */
+    --background: #61B1E6;
+    --color: #ffffff; 
+    --border-radius: 50px; 
+    font-size: 20px;
+    padding: 15px; 
+    height: 100px; 
   }
 
   .center-text {

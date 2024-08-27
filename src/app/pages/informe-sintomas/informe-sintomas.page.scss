@@ -1,37 +1,32 @@
 ion-content {
-    --background: #DCF0FF;
-  
-  }
+  --background: #DCF0FF;
+
+}
 
 
-  ion-textarea {
-    width: 100%;
-    height: 200px;
-  }
+ion-textarea {
+  width: 100%;
+  height: 200px;
+}
 
-  ion-card-content{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+ion-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .custom-title {
   text-align: center;
   font-family: 'Arial', sans-serif;
-  /* Cambia la fuente */
   font-size: 24px;
-  /* Cambia el tamaño de la fuente */
   color: #61B1E6;
-  /* Cambia el color de la fuente */
   font-weight: bold;
-  /* Cambia el grosor de la fuente */
 }
 
 .white-icon {
   color: #ffffff;
-  /* Color blanco */
-}  
+}
+
 ion-toolbar {
   --background: #1C5183;
-  /* Cambia el color de fondo del ion-toolbar si es necesario */
 }

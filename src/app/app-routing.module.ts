@@ -16,10 +16,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'buscar-pac',
-    loadChildren: () => import('./pages/buscar-pac/buscar-pac.module').then( m => m.BuscarPacPageModule)
-  },
-  {
     path: 'info-pac',
     loadChildren: () => import('./pages/info-pac/info-pac.module').then( m => m.InfoPacPageModule)
   },
@@ -34,6 +30,30 @@ const routes: Routes = [
   {
     path: 'signos-vit',
     loadChildren: () => import('./pages/signos-vit/signos-vit.module').then( m => m.SignosVitPageModule)
+  },
+  {
+    path: 'reg-paramedico',
+    loadChildren: () => import('./pages/reg-paramedico/reg-paramedico.module').then( m => m.RegParamedicoPageModule)
+  },
+  {
+    path: 'eliminar-para',
+    loadChildren: () => import('./pages/eliminar-para/eliminar-para.module').then( m => m.EliminarParaPageModule)
+  },
+  {
+    path: 'reg-paciente',
+    loadChildren: () => import('./pages/reg-paciente/reg-paciente.module').then( m => m.RegPacientePageModule)
+  },
+  {
+    path: 'mod-paciente',
+    loadChildren: () => import('./pages/mod-paciente/mod-paciente.module').then( m => m.ModPacientePageModule)
+  },
+  {
+    path: 'mod-paramedico',
+    loadChildren: () => import('./pages/mod-paramedico/mod-paramedico.module').then( m => m.ModParamedicoPageModule)
+  },
+  {
+    path: 'el-paciente',
+    loadChildren: () => import('./pages/el-paciente/el-paciente.module').then( m => m.ElPacientePageModule)
   },
 ];
 

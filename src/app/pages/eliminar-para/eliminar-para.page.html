@@ -9,49 +9,57 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content [fullscreen]="true">
   <ion-grid fixed>
     <ion-row class="ion-justify-content-center ion-align-items-center">
       <ion-col size-xs="12" size-sm="10" size-md="8" size-lg="6" size-xl="4">
+        
+        <!-- Campo para buscar RUT -->
         <ion-card>
           <ion-card-header>
-            <ion-card-title>Datos del Paramédico</ion-card-title>
+            <ion-card-title>Eliminar paramedico</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="stacked">RUT:</ion-label>
+              <ion-input placeholder="Ingrese el RUT" type="text"></ion-input>
+            </ion-item>
+            <ion-button expand="block" shape="round" color="primary" class="ion-margin-top">
+              Buscar
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+        <!-- Sección de resultados -->
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Perfil Encontrado</ion-card-title>
           </ion-card-header>
 
           <ion-card-content>
             <ion-list>
-              <!-- Mostrar RUT -->
               <ion-item>
-                <ion-label position="stacked"><strong>RUT:</strong></ion-label>
+                <ion-label><strong>RUT:</strong></ion-label>
                 <ion-text>12345678-9</ion-text>
               </ion-item>
-
-              <!-- Mostrar Nombre -->
               <ion-item>
-                <ion-label position="stacked"><strong>Nombre:</strong></ion-label>
+                <ion-label><strong>Nombre:</strong></ion-label>
                 <ion-text>Juan Pérez</ion-text>
               </ion-item>
-
-              <!-- Mostrar Hospital -->
               <ion-item>
-                <ion-label position="stacked"><strong>Hospital:</strong></ion-label>
+                <ion-label><strong>Hospital:</strong></ion-label>
                 <ion-text>Hospital 1</ion-text>
-              </ion-item>
-
-              <!-- Mostrar Clave (En general no se mostraría la clave, pero la incluyo para el ejemplo) -->
-              <ion-item>
-                <ion-label position="stacked"><strong>Clave:</strong></ion-label>
-                <ion-text>********</ion-text>
               </ion-item>
             </ion-list>
           </ion-card-content>
 
-          <!-- Botón de Acción (por ejemplo, editar perfil) -->
-          <ion-button expand="block" shape="round" color="secondary" class="ion-margin-top">
-            Editar Perfil
+          <!-- Botón de eliminación -->
+          <ion-button expand="block" shape="round" color="danger" class="ion-margin-top">
+            Eliminar Perfil
           </ion-button>
         </ion-card>
+
       </ion-col>
     </ion-row>
   </ion-grid>

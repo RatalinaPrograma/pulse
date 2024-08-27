@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="custom-title">
+      Pulse<ion-icon name="pulse-outline" class="white-icon"></ion-icon>Track
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size-xs="12" size-sm="10" size-md="8" size-lg="6" size-xl="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Datos del Paciente</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <!-- Campo RUT -->
+            <ion-item>
+              <ion-label position="stacked">RUT:</ion-label>
+              <ion-input value="12345678-9" type="text" readonly></ion-input>
+            </ion-item>
+
+            <!-- Campo Nombre -->
+            <ion-item>
+              <ion-label position="stacked">Nombre:</ion-label>
+              <ion-input value="Juan Pérez" type="text"></ion-input>
+            </ion-item>
+
+            <!-- Campo Edad -->
+            <ion-item>
+              <ion-label position="stacked">Edad:</ion-label>
+              <ion-input value="30" type="number"></ion-input>
+            </ion-item>
+
+            <!-- Campo Alergias -->
+            <ion-item>
+              <ion-label position="stacked">Alergias:</ion-label>
+              <ion-input value="Ninguna" type="text"></ion-input>
+            </ion-item>
+
+            <!-- Campo Enfermedades -->
+            <ion-item>
+              <ion-label position="stacked">Enfermedades:</ion-label>
+              <ion-input value="Diabetes Tipo 2" type="text"></ion-input>
+            </ion-item>
+          </ion-card-content>
+
+          <!-- Botón de guardar cambios -->
+          <ion-button expand="block" shape="round" color="primary" class="ion-margin-top">
+            Guardar Cambios
+          </ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
