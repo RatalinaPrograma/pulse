@@ -3,33 +3,55 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-
-    <ion-title>Signos-Vitales</ion-title>
+    <ion-title class="custom-title">
+      Pulse<ion-icon name="pulse-outline" class="white-icon"></ion-icon>Track
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card>
-    <ion-card-content>
-      <ion-card-title>Informe de los signos vitales</ion-card-title>
-    </ion-card-content>
-  </ion-card>
+  <ion-grid fixed>
+    <ion-row class="ion-justify-content-center ion-align-items-center">
+      <ion-col size-xs="12" size-sm="10" size-md="8" size-lg="6" size-xl="4">
+        <ion-card>
+          <ion-card-content>
+            <ion-card-title>Informe de los signos vitales</ion-card-title>
+          </ion-card-content>
+        </ion-card>
 
-  <ion-card-content class="ion1">
-    <ion-icon name="pulse-sharp" style="font-size: 45px; color: #000000; border: 2px solid #000000; border-radius: 50%; padding: 16px;"></ion-icon>
-  </ion-card-content>
+        <ion-card-content class="ion-text-center">
+          <ion-icon name="pulse-sharp"
+            style="font-size: 45px; color: #000000; border: 2px solid #000000; border-radius: 50%; padding: 16px;">
+          </ion-icon>
+        </ion-card-content>
 
-  <ion-card>
-  <ion-card-content>
-    <ion-input placeholder="Ingrese la frecuencia cardiaca " type="cardiaca"></ion-input>
-    <ion-input placeholder="Ingrese la presion arterial" type="presion"></ion-input>
-    <ion-input placeholder="Ingrese el nivel de oxigeno en la sangre" type="sangre"></ion-input>
-    <ion-input placeholder="Ingrese el nivel de glucosa en la sangre" type="glucosa"></ion-input>
-    <ion-input placeholder="Ingrese la temperatura corporal" type="temperatura"></ion-input>
-    <ion-input placeholder="Ingrese enfermedades adicionales" type="glucosa"></ion-input>
-  </ion-card-content>
-</ion-card>
-<ion-button class="custom-button custom-button-secondary" expand="full" shape="round" >
-  Enviar
-</ion-button>
+        <ion-card>
+          <ion-card-content>
+            <ion-item>
+              <ion-input placeholder="Ingrese la frecuencia cardiaca" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input placeholder="Ingrese la presión arterial" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input placeholder="Ingrese el nivel de oxígeno en la sangre" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input placeholder="Ingrese el nivel de glucosa en la sangre" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input placeholder="Ingrese la temperatura corporal" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input placeholder="Ingrese enfermedades adicionales" type="text"></ion-input>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-button class="custom-button custom-button-secondary" expand="block" shape="round">
+          Enviar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
